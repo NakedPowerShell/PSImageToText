@@ -89,7 +89,7 @@ PrivateData = @{
         Category = "PowerShell"
 
         # Keyword tags to help users find this module via navigations and search.
-        Tags = @("PowerShell","Cognitive Services","OCR","Text")
+        Tags = @("PowerShell","CognitiveServices","OCR","Text")
 
         # The web address of an icon which can be used in galleries to represent this module
         #IconUri = "http://pesterbdd.com/images/Pester.png"

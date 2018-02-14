@@ -16,7 +16,7 @@
 
 function Save-ImgFromClipboard {
     $e = Get-Clipboard -Format Image
-    if (!$e) {
+    if ($e) {
         $fileName = (New-TemporaryFile).FullName
         $e.Save($fileName)
         return $fileName

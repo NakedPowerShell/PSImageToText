@@ -26,7 +26,5 @@ function Save-ImgFromClipboard {
 }
 
 function ConvertFrom-ClipboardToText {
-    #$r = ConvertTo-Text (Save-ImgFromClipboard)
-    #    $r.regions.lines.words.text -join " "
     (ConvertTo-Text (Save-ImgFromClipboard)).regions.lines.words.text -join " "
 }

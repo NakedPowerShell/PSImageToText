@@ -4,7 +4,7 @@
 RootModule = 'PSImageToText.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.0'
+ModuleVersion = '1.0.1'
 
 # ID used to uniquely identify this module
 GUID = 'aff2db95-01ae-4122-b219-c402a8edc01e'

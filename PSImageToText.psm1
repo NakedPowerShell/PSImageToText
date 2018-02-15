@@ -5,7 +5,11 @@
         throw '$env:MicrosoftVisionKey needs to be set with your Congnitive Services key - https://azure.microsoft.com/en-us/try/cognitive-services/'
     }
 
-    $uri = "https://eastus.api.cognitive.microsoft.com/vision/v1.0/ocr"
+    if (!$env:MicrosoftVisionEndpoint) {
+        throw '$env:MicrosoftVisionEndpoint needs to be set with your Congnitive Services Endpoint - https://portal.azure.com'
+    }
+
+    $uri = $env:MicrosoftVisionEndpoint
     $header = @{
         'Ocp-Apim-Subscription-Key' = $env:MicrosoftVisionKey
         'Content-Type'              = 'application/octet-stream'
